@@ -11,8 +11,8 @@ public class Converter {
 
     public static void main(String[] args) {
         float in = 140;
-        double expectedOne = in / 100;
-        double expectedTwo = in / 90;
+        float expectedOne = 1.4F;
+        float expectedTwo = 1.55555556F;
         float euro = rubleToEuro(in);
         float dollar = rubleToDollar(in);
         boolean passedOne = expectedOne == euro;
@@ -20,5 +20,4 @@ public class Converter {
         System.out.println("140 rubles are " + euro + " euro. Test result: " + passedOne);
         System.out.println("140 rubles are " + dollar + " dollar. Test result: " + passedTwo);
     }
-
 }
