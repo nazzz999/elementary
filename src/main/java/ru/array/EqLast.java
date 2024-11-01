@@ -2,7 +2,7 @@ package ru.array;
 
 public class EqLast {
     public static boolean check(int[] left, int[] right) {
-        for (int index = 0; index < left.length; index++) {
+        for (int element : left) {
             if (left[left.length - 1] == right[right.length - 1]) {
                 return true;
             }
