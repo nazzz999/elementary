@@ -104,4 +104,15 @@ public class MatrixCheckTest {
             char[] expected = {'X', 'Y', 'Z'};
             assertThat(result).containsExactly(expected);
         }
+
+    @Test
+    public void whenHasNMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isTrue();
+    }
 }
