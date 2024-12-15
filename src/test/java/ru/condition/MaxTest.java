@@ -44,9 +44,9 @@ class MaxTest {
     }
 
     @Test
-    void whenMax7To4and3and9Then9() {
+    void whenMax7To4and2and9Then9() {
         int one = 4;
-        int two = 3;
+        int two = 2;
         int tree = 7;
         int four = 9;
         int result = Max.max(one, two, tree, four);
