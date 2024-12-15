@@ -36,7 +36,7 @@ class PointTest {
     void when111to222then1dot73() {
         double expected = 5.39;
         Point a = new Point(1, 1);
-        Point b = new Point(2, 2);
+        Point b = new Point(2, 0);
         Point c = new Point(5, 4, 2);
         double out = a.distance3d(c);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
